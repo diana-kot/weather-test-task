@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+
+  &:hover, &:active {
+    color: $color-white;
+    .icon-Arrow {
+      fill: $color-white;
+    }
+    * {
+      fill: $color-white;
+    }
+
+
+}
+}
+
+.back-button {
+  color: $black-blue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 110.7%; 
+  padding: 0;
+  border: none;
+}
+
+.button-modal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  column-gap: 36px;
+}
+
+

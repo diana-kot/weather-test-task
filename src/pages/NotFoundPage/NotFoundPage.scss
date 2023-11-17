@@ -1,0 +1,18 @@
+@import "../../styles/variables.scss";
+
+.section-error {
+&__content {
+    display: flex;
+    justify-content: center;
+}
+
+    &__text {
+        color: $color-white;
+        padding-top: 40px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+
+

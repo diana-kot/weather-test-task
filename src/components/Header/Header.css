@@ -1,0 +1,21 @@
+.header {
+  background-color: #2A2F45;
+  min-height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  position: relative;
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  max-width: 30px;
+  max-height: 30px;
+}
+.header__text {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}

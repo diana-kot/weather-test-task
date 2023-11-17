@@ -1,0 +1,151 @@
+@import './fonts.css';
+@import 'normalize.css';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.work {
+  background-color: var(--background-color);
+}
+
+button {
+  background-color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.wrapper {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+}
+.wrapper-color {
+  background-color: #161B30;
+}
+.wrapper-gradient {
+  background: radial-gradient(80.36% 80.36% at 50% 0%, #5A607C 0%, #161B30 100%);
+}
+
+.error-text {
+  color: #FFFFFF;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content__top {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1516px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+}
+
+.grid, .grid-five, .grid-four, .grid-three, .grid-two, .grid-one {
+  display: grid;
+  height: fit-content;
+  align-items: center;
+  column-gap: 34px;
+  row-gap: 30px;
+}
+.grid > div, .grid-five > div, .grid-four > div, .grid-three > div, .grid-two > div, .grid-one > div {
+  width: 100%;
+  min-height: 100px;
+}
+.grid-one {
+  grid-template-columns: 1fr;
+}
+.grid-two {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-four {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-five {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.center {
+  padding: 0 20px;
+}
+
+@media (max-width: 1366px) {
+  .grid-five {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .grid-three {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-four {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-five {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+  .grid-three {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-four {
+    grid-template-columns: 1fr;
+  }
+  .grid-five {
+    grid-template-columns: 1fr;
+  }
+}

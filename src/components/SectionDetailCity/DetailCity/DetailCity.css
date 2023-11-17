@@ -1,0 +1,130 @@
+.detail-city {
+  display: flex;
+  flex-direction: column;
+  column-gap: 40px;
+  align-items: center;
+  margin-top: 28px;
+}
+.detail-city__name {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 110.7%;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.detail-city__weather {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 110.7%;
+}
+.detail-city__temp {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.detail-city__temp-image {
+  position: relative;
+  width: 191px;
+  height: 191px;
+}
+.detail-city__temp-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.detail-city__temp-span {
+  font-size: 129.755px;
+  font-weight: 600;
+  line-height: 110.7%; /* 143.639px */
+  background: linear-gradient(180deg, #fff 11.65%, rgba(255, 255, 255, 0) 139.47%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-city__barometer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.detail-city__barometer > span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.detail-city__barometer::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../../../assets/images/svg/barometr.svg") no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.detail-city__daybreak {
+  color: #8A91AB;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 110.7%;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.navigation__image {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  .navigation {
+    margin-top: 20px;
+  }
+  .detail-city {
+    margin-top: 49px;
+  }
+  .detail-city__name {
+    font-size: 24px;
+    line-height: 15px;
+    margin-bottom: 26px;
+  }
+  .detail-city__weather {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .detail-city__temp {
+    flex-direction: column;
+  }
+  .detail-city__temp-image {
+    position: relative;
+    width: 132px;
+    height: 132px;
+  }
+  .detail-city__temp-span {
+    font-size: 120px;
+    line-height: 133px;
+  }
+  .detail-city__barometer {
+    margin-bottom: 40px;
+  }
+  .detail-city__barometer > span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .detail-city__daybreak {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}

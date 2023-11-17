@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.section-cities {
+	margin-top: 55px;
+	// padding-bottom: 137px;
+
+
+
+	&__container {
+		max-width: 880px;
+
+	}
+
+	&__list {
+		gap: 20px;
+		padding-top: 100px;
+		margin-bottom: 30px;
+
+		li {
+			height: 100%;
+		}
+	}
+	&__count {
+		font-weight: 600;
+		color: $black-blue;
+		font-size: 26px;
+	}
+}
+
+.list__item {
+	background-color: $color-black;
+}
+
+@media (max-width: $breakpoint-md) {
+	.section-cities {
+		margin-top: 33px;
+	}
+
+}

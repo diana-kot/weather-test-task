@@ -1,0 +1,21 @@
+.section-search {
+  margin-top: 80px;
+}
+.section-search__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-search__form {
+  position: relative;
+  display: flex;
+  max-width: 510px;
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .section-search {
+    margin-top: 20px;
+  }
+}

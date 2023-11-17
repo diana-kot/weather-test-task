@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.section-search {
+    margin-top: 80px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    &__form {
+        position: relative;
+        display: flex;
+        max-width: 510px;
+        width: 100%;
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .section-search {
+        margin-top: 20px;
+    }
+}

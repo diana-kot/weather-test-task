@@ -1,0 +1,8 @@
+.loader {
+  margin-top: 125px;
+}
+.loader__text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}

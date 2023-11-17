@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.header {
+    background-color: $color-gray;
+    min-height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        position: relative;
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    &__text {
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+

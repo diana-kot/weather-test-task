@@ -1,0 +1,29 @@
+.section-cities {
+  margin-top: 55px;
+}
+.section-cities__container {
+  max-width: 880px;
+}
+.section-cities__list {
+  gap: 20px;
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+.section-cities__list li {
+  height: 100%;
+}
+.section-cities__count {
+  font-weight: 600;
+  color: #8A91AB;
+  font-size: 26px;
+}
+
+.list__item {
+  background-color: #161B30;
+}
+
+@media (max-width: 560px) {
+  .section-cities {
+    margin-top: 33px;
+  }
+}
