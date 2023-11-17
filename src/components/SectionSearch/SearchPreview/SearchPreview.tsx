@@ -19,7 +19,7 @@ type Preview = {
 };
 
 const Hightlight = (filter: any, str: any) => {
-    // const { filter, str } = props
+  
     if (!filter) return str;
     const regexp = new RegExp(filter, 'ig');
     const matchValue = str.match(regexp);
@@ -40,35 +40,7 @@ const Hightlight = (filter: any, str: any) => {
     }
     return str;
 };
-function InsertMark(filter: string, str: string) {
-    if (!filter) return str;
-    const regexp = new RegExp(filter, 'ig');
-    const matchValue = str.match(regexp);
-    if (matchValue) {
-        const station = str.replace(regexp, `<span className="name-color">${filter}</span>`);
-        return (
-            <>
-                <span className="name-color">{station}</span>
-            </>
-        );
-    }
 
-    // const matchValue = str.match(regexp);
-    // if (matchValue) {
-    //     return str.split(regexp).map((s, index, array) => {
-    //         if (index < array.length - 1) {
-    //             const c = matchValue.shift();
-    //             return (
-    //                 <>
-    //                     {s}
-    //                     <span className="name-color">{c}</span>
-    //                 </>
-    //             );
-    //         }
-    //     });
-    // }
-    // return str;
-}
 
 export default function SearchPreview({ items, setInputValue, setOpen, inputValue }: Preview) {
     const dropDownRef = useOutsideClick(() => {
@@ -84,6 +56,7 @@ export default function SearchPreview({ items, setInputValue, setOpen, inputValu
         <>
             <div ref={dropDownRef}>
                 <ul className="search-preview__list">
+                   
                     {items &&
                         items.length > 0 &&
                         items.map((item) => (

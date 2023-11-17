@@ -42,6 +42,8 @@ export default function SectionSearch() {
         }
     }, [inputValue]);
 
+    console.log('items?.length', items?.length);
+
     return (
         <section className="section-search">
             <div className="container">
@@ -55,8 +57,15 @@ export default function SectionSearch() {
                         />
                         {items?.length >= 1 && inputValue !== '' && inputValue.length > 2 && isOpen ? (
                             <SearchPreview
-                             items={items} setInputValue={setInputValue} inputValue={inputValue} setOpen={setOpen} />
+                                items={items}
+                                setInputValue={setInputValue}
+                                inputValue={inputValue}
+                                setOpen={setOpen}
+                            />
                         ) : null}
+                        {items?.length === 0 && inputValue !== '' && (
+                            <p className="search-preview__item-name">Ничего не найдено</p>
+                        )}
                     </form>
                     {status === 'error' && <p className="error-text">Что-то пошло не так</p>}
                 </div>
