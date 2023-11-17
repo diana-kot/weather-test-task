@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/weather-test-task/static/css/main.f5fefdc7.css",
-    "main.js": "/weather-test-task/static/js/main.1372dd34.js",
+    "main.css": "/weather-test-task/static/css/main.71f0f1d8.css",
+    "main.js": "/weather-test-task/static/js/main.4caa700d.js",
     "static/js/787.13d76ca7.chunk.js": "/weather-test-task/static/js/787.13d76ca7.chunk.js",
     "static/media/SF-Pro-Display-Semibold.woff2": "/weather-test-task/static/media/SF-Pro-Display-Semibold.00d526c059bb8595900d.woff2",
     "static/media/SF-Pro-Display-Medium.woff2": "/weather-test-task/static/media/SF-Pro-Display-Medium.91f34536fe9e682ea313.woff2",
@@ -26,12 +26,12 @@
     "static/media/Sand.svg": "/weather-test-task/static/media/Sand.89a4b8026d5fa719e180.svg",
     "static/media/barometr.svg": "/weather-test-task/static/media/barometr.0466d74799e0ac24496e.svg",
     "index.html": "/weather-test-task/index.html",
-    "main.f5fefdc7.css.map": "/weather-test-task/static/css/main.f5fefdc7.css.map",
-    "main.1372dd34.js.map": "/weather-test-task/static/js/main.1372dd34.js.map",
+    "main.71f0f1d8.css.map": "/weather-test-task/static/css/main.71f0f1d8.css.map",
+    "main.4caa700d.js.map": "/weather-test-task/static/js/main.4caa700d.js.map",
     "787.13d76ca7.chunk.js.map": "/weather-test-task/static/js/787.13d76ca7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5fefdc7.css",
-    "static/js/main.1372dd34.js"
+    "static/css/main.71f0f1d8.css",
+    "static/js/main.4caa700d.js"
   ]
 }
