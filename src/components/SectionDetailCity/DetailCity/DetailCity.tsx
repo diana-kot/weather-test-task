@@ -46,10 +46,16 @@ export default function DetailCity({ city }: ICity) {
         setCityFavorite(!cityFavorite);
     };
 
-    useEffect(() => {
+    const comparisonsCity = (id: string) => {
         let searchTerm = id;
         let cityId = favorites.find((city) => city.name === searchTerm);
         cityId ? setCityFavorite(true) : setCityFavorite(false);
+    };
+
+    useEffect(() => {
+        if (id) {
+            comparisonsCity(id);
+        }
     }, [id]);
 
     return (
@@ -80,13 +86,13 @@ export default function DetailCity({ city }: ICity) {
                 <div className="detail-city__daybreak">
                     {now < sunrise || now > sunset
                         ? `Восход в ${sunrise.toLocaleTimeString('ru', {
-                            hour: '2-digit',
-                            minute: '2-digit',
-                        })}`
+                              hour: '2-digit',
+                              minute: '2-digit',
+                          })}`
                         : `Закат в ${sunset.toLocaleTimeString('ru', {
-                            hour: '2-digit',
-                            minute: '2-digit',
-                        })}`}
+                              hour: '2-digit',
+                              minute: '2-digit',
+                          })}`}
                 </div>
             </div>
         </>
