@@ -6,7 +6,7 @@ import Header from '../../components/Header/Header';
 export default function MainLayout({ children, gradient = false }: MainLayoutInt) {
     return (
         <div className={`wrapper wrapper-color ${gradient ? 'wrapper-gradient' : ''}`}>
-            <div className="content container">
+            <div className="content">
                 <div className="content__top">
                     <Header />
                     <main>{children}</main>
