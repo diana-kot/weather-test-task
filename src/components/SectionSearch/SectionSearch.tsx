@@ -63,7 +63,7 @@ export default function SectionSearch() {
                             />
                         ) : null}
                     </form>
-                    {items?.length === 0 && inputValue !== '' && (
+                    {items?.length === 0 && inputValue !== '' && status === "completed" && (
                         <p className="search-preview__item-name">Ничего не найдено</p>
                     )}
                     {status === 'error' && <p className="error-text">Что-то пошло не так</p>}

@@ -65,7 +65,7 @@ export default function SearchPreview({ items, setInputValue, setOpen, inputValu
                                 className="search-preview__item"
                                 onClick={() => itemClickHandler(item.name)}
                             >
-                                <Link to={`${routerPath.CITIES}/${item.name}`} className="search-preview__link">
+                                <Link  key={item.name} to={`${routerPath.CITIES}/${item.name}`} className="search-preview__link">
                                     <p className="search-preview__item-name">{Hightlight(inputValue, item.name)}</p>
                                 </Link>
                             </li>
