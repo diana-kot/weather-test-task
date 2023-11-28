@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/weather-test-task/static/css/main.f257ed52.css",
-    "main.js": "/weather-test-task/static/js/main.1900a11b.js",
+    "main.css": "/weather-test-task/static/css/main.c896a805.css",
+    "main.js": "/weather-test-task/static/js/main.868c24a9.js",
     "static/js/787.13d76ca7.chunk.js": "/weather-test-task/static/js/787.13d76ca7.chunk.js",
     "static/media/SF-Pro-Display-Semibold.woff2": "/weather-test-task/static/media/SF-Pro-Display-Semibold.00d526c059bb8595900d.woff2",
     "static/media/SF-Pro-Display-Medium.woff2": "/weather-test-task/static/media/SF-Pro-Display-Medium.91f34536fe9e682ea313.woff2",
@@ -19,19 +19,20 @@
     "static/media/Clear.svg": "/weather-test-task/static/media/Clear.47aa1d3c1bd6f84410de.svg",
     "static/media/Thunderstorm.svg": "/weather-test-task/static/media/Thunderstorm.1a7b111172111036661e.svg",
     "static/media/Clouds.svg": "/weather-test-task/static/media/Clouds.9976066bbdc7321922f0.svg",
-    "static/media/Logo.svg": "/weather-test-task/static/media/Logo.adb8cfc89ce74b605b70497c3964f909.svg",
-    "static/media/sprite.svg": "/weather-test-task/static/media/sprite.6cfdf39db018f4bb539733ee935fe376.svg",
+    "static/media/Logo.svg": "/weather-test-task/static/media/Logo.8e3af596b2d773938036b2c8e14f3623.svg",
+    "static/media/sprite.svg": "/weather-test-task/static/media/sprite.a7c64bb72e7daa941a0d5d857bf3c563.svg",
     "static/media/Ash.svg": "/weather-test-task/static/media/Ash.89a4b8026d5fa719e180.svg",
     "static/media/Dust.svg": "/weather-test-task/static/media/Dust.89a4b8026d5fa719e180.svg",
     "static/media/Sand.svg": "/weather-test-task/static/media/Sand.89a4b8026d5fa719e180.svg",
     "static/media/barometr.svg": "/weather-test-task/static/media/barometr.0466d74799e0ac24496e.svg",
     "index.html": "/weather-test-task/index.html",
-    "main.f257ed52.css.map": "/weather-test-task/static/css/main.f257ed52.css.map",
-    "main.1900a11b.js.map": "/weather-test-task/static/js/main.1900a11b.js.map",
+    "static/media/chevron_big_left.svg": "/weather-test-task/static/media/chevron_big_left.d83ebe64ddf13c9521b829f33c0e712e.svg",
+    "main.c896a805.css.map": "/weather-test-task/static/css/main.c896a805.css.map",
+    "main.868c24a9.js.map": "/weather-test-task/static/js/main.868c24a9.js.map",
     "787.13d76ca7.chunk.js.map": "/weather-test-task/static/js/787.13d76ca7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f257ed52.css",
-    "static/js/main.1900a11b.js"
+    "static/css/main.c896a805.css",
+    "static/js/main.868c24a9.js"
   ]
 }
