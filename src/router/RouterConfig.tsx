@@ -21,7 +21,7 @@ export default function RouterConfig() {
             element: <DetailCity />,
         },
         {
-            path: '*',
+            path: routerPath.ERROR,
             element: <NotFoundPage />,
         },
     ];

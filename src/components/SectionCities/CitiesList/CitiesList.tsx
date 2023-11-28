@@ -1,10 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 
 import { ICity } from 'redux/favorites/types';
-
-import { routerPath } from 'constants/routerPath';
 
 import CityCard from '../CityCard/CityCard';
 
@@ -15,16 +11,13 @@ type ICities = {
 };
 
 export default function CitiesList({ cities }: ICities) {
-
     return (
         <ul className="cities__list grid-three">
             {cities &&
                 cities.length > 0 &&
                 cities.map((item: any) => (
-                    <li className="list__item" key={item.id}>
-                        <Link to={`${routerPath.CITIES}/${item.id}`}>
-                            <CityCard item={item} />
-                        </Link>
+                    <li className="list__item" key={item.name}>
+                        <CityCard item={item} />
                     </li>
                 ))}
         </ul>

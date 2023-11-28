@@ -141,7 +141,16 @@ footer {
 }
 
 .center {
-	padding: 0 20px;
+	padding: 0 34px;
+}
+
+.content__error-info {
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
 }
 
 @media (max-width: $breakpoint-xl) {
@@ -153,8 +162,6 @@ footer {
 }
 
 @media (max-width: $breakpoint-lg) {
-
-
 	.grid {
 		&-three {
 			grid-template-columns: 1fr 1fr;
@@ -171,6 +178,9 @@ footer {
 }
 
 @media (max-width: $breakpoint-md) {
+	.center {
+		padding: 0 20px;
+	}
 
 	.grid {
 		&-two {
@@ -190,4 +200,13 @@ footer {
 		}
 	}
 }
+
+@media (max-width: $breakpoint-374) {
+	.grid {
+		&-three {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
 

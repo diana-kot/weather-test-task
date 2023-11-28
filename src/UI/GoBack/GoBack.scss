@@ -3,6 +3,7 @@
 .button {
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 12px;
   background: none;
   cursor: pointer;
@@ -16,8 +17,6 @@
     * {
       fill: $color-white;
     }
-
-
 }
 }
 

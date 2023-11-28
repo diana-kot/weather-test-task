@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Dispatch, SetStateAction } from 'react';
@@ -19,7 +19,6 @@ type Preview = {
 };
 
 const Hightlight = (filter: any, str: any) => {
-  
     if (!filter) return str;
     const regexp = new RegExp(filter, 'ig');
     const matchValue = str.match(regexp);
@@ -41,8 +40,8 @@ const Hightlight = (filter: any, str: any) => {
     return str;
 };
 
-
 export default function SearchPreview({ items, setInputValue, setOpen, inputValue }: Preview) {
+
     const dropDownRef = useOutsideClick(() => {
         setOpen(false);
     });
@@ -53,25 +52,21 @@ export default function SearchPreview({ items, setInputValue, setOpen, inputValu
     };
 
     return (
-        <>
-            <div ref={dropDownRef}>
-                <ul className="search-preview__list">
-                   
-                    {items &&
-                        items.length > 0 &&
-                        items.map((item) => (
-                            <li
-                                key={item.id}
-                                className="search-preview__item"
-                                onClick={() => itemClickHandler(item.name)}
+        <div ref={dropDownRef}>
+            <ul className="search-preview__list">
+                {items &&
+                    items.length > 0 &&
+                    items.map((item) => (
+                        <li key={item.name} className="search-preview__item" onClick={() => itemClickHandler(item.name)}>
+                            <Link
+                                to={`${routerPath.CITIES}/${item.name}`}
+                                className="search-preview__link"
                             >
-                                <Link  key={item.name} to={`${routerPath.CITIES}/${item.name}`} className="search-preview__link">
-                                    <p className="search-preview__item-name">{Hightlight(inputValue, item.name)}</p>
-                                </Link>
-                            </li>
-                        ))}
-                </ul>
-            </div>
-        </>
+                                <p className="search-preview__item-name">{Hightlight(inputValue, item.name)}</p>
+                            </Link>
+                        </li>
+                    ))}
+            </ul>
+        </div>
     );
 }

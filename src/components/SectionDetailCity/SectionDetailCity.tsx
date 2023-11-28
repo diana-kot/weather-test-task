@@ -23,9 +23,7 @@ export default function SectionDetailCity() {
     };
 
     useEffect(() => {
-        if (id) {
-            getDetailCities();
-        }
+        getDetailCities();
     }, []);
 
     return (

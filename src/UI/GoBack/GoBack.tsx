@@ -1,8 +1,6 @@
-import { useNavigate } from 'react-router-dom';
-
 import { ReactComponent as Arrow } from '../../assets/images/svg/chevron_big_left.svg';
 
-import Icon from '../Icon/Icon';
+// import Icon from '../Icon/Icon';
 
 import './GoBack.css';
 
@@ -10,21 +8,19 @@ type ButtonIconTypes = 'none' | 'arrow';
 
 interface ButtonInt {
     text: JSX.Element | string;
-   
-    type?: any; 
+    type?: any;
     icon?: ButtonIconTypes;
+    callback?: () => void;
 }
 
-export default function GoBack({ type = 'button', text, icon = 'arrow' }: ButtonInt) {
-    const navigate = useNavigate();
+export default function GoBack({ type = 'button', text, icon = 'arrow', callback }: ButtonInt) {
+    
 
     return (
-        <button type={type} className={`back-button button`} onClick={() => navigate(-1)}>
+        <button type={type} className={`back-button button`} onClick={callback}>
             {icon === 'arrow' && (
-                <Icon id="Arrow" size={24} className={`back-button__icon`} />
-                // <Arrow
-                //     className={`back-button__icon`}
-                // />
+                // <Icon id="Arrow" size={24} className={`back-button__icon`} />
+                <Arrow className={`icon-Arrow`} />
             )}
             {text}
         </button>

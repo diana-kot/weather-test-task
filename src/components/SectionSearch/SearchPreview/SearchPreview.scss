@@ -30,6 +30,11 @@
         text-align: left;
         transition: all 0.2s ease 0s;
         cursor: pointer;
+
+		&-error {
+			display: block;
+			height: 25px;
+		}
 		&-name {
 			color: $black-blue;
 			font-size: 16px;

@@ -116,7 +116,16 @@ footer {
 }
 
 .center {
-  padding: 0 20px;
+  padding: 0 34px;
+}
+
+.content__error-info {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1366px) {
@@ -136,6 +145,9 @@ footer {
   }
 }
 @media (max-width: 560px) {
+  .center {
+    padding: 0 20px;
+  }
   .grid-two {
     grid-template-columns: 1fr;
   }
@@ -146,6 +158,11 @@ footer {
     grid-template-columns: 1fr;
   }
   .grid-five {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 374px) {
+  .grid-three {
     grid-template-columns: 1fr;
   }
 }

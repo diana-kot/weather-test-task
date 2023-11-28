@@ -26,6 +26,10 @@
   transition: all 0.2s ease 0s;
   cursor: pointer;
 }
+.search-preview__item-error {
+  display: block;
+  height: 25px;
+}
 .search-preview__item-name {
   color: #8A91AB;
   font-size: 16px;

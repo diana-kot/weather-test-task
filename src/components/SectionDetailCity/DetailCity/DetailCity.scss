@@ -33,7 +33,6 @@
 			position: relative;
 			width: 191px;
 			height: 191px;
-			// padding: 20px 20.682px 21px 20.318px;
 			img {
 				position: absolute;
 				top: 0;
@@ -41,15 +40,13 @@
 				max-width: 100%;
 				max-height: 100%;
 				object-fit: cover;
-				// width: 141px;
-				// height: 127.295px;
 			}
 		}
 
 		&-span {
 			font-size: 129.755px;
 			font-weight: 600;
-			line-height: 110.7%; /* 143.639px */
+			line-height: 110.7%; 
 			background: linear-gradient(
 				180deg,
 				#fff 11.65%,
@@ -114,12 +111,12 @@
 
 
 	.detail-city {
-		margin-top: 49px;
+		margin-top: 51px;
 
 		&__name {
 			font-size: 24px;
 			line-height: 15px;
-			margin-bottom: 26px;
+			margin-bottom: 24px;
 		}
 
 		&__weather {
@@ -128,11 +125,11 @@
 		}
 		&__temp {
 			flex-direction: column;
+			margin-bottom: 23px;
 			&-image {
 				position: relative;
-				width: 132px;
-				height: 132px;
-				// padding: 20px 20.682px 21px 20.318px;
+				width: 142px;
+				height: 142px;
 			}
 
 			&-span {
@@ -142,7 +139,7 @@
 		}
 
 		&__barometer {
-			margin-bottom: 40px;
+			margin-bottom: 39px;
 			& > span {
 				font-size: 14px;
 				line-height: 16px;

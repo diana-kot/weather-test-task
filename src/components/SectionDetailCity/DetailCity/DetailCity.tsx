@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ type ICity = {
 };
 
 export default function DetailCity({ city }: ICity) {
+    const navigate = useNavigate();
     const { id } = useParams();
     const dispatch = useDispatch();
     const { favorites } = useSelector(selectFavoritesData);
@@ -61,7 +63,9 @@ export default function DetailCity({ city }: ICity) {
     return (
         <>
             <div className="navigation">
-                <GoBack text={windowWidth > 560 ? 'Назад' : ''} />
+                <GoBack
+                callback ={() => navigate(-1)}
+                 text={windowWidth > 560 ? 'Назад' : ''} />
                 {cityFavorite ? (
                     <Icon id="Bookmark_use" size={24} onClick={dispatchFavoriteCity} />
                 ) : (
@@ -74,11 +78,14 @@ export default function DetailCity({ city }: ICity) {
 
                 <div className="detail-city__temp">
                     <span className="detail-city__temp-span">{temp}°</span>
+                    <div className="detail-city__temp-image">
                     <img
                         src={require(`../../../assets/images/svg/${city.weather[0].main}.svg`)}
                         alt={`Изображение:`}
-                        className="detail-city__temp-image"
+                        
                     />
+                    </div>
+                   
                 </div>
                 <div className="detail-city__barometer">
                     <span>{Math.round(city.main.pressure * 0.75006375541921)} мм рт. ст.</span>

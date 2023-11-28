@@ -7,9 +7,12 @@
 	width: 100%;
     background-color: $color-gray-dark;
     border-radius: 6px;
-    opacity: 0.5;
 	transition: all 0.5s;
 	cursor: pointer;
+
+	&:hover {
+		opacity: 0.5;
+	}
 
 	&__content {
 	display: flex;
@@ -38,7 +41,7 @@
 	&__image {
 		position: relative;
 		width: 100px;
-		height: 68px;
+		height: 78px;
 		img {
 			position: absolute;
 			top: 0;

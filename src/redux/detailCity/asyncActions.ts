@@ -7,7 +7,13 @@ import { API_KEY, SERVER_URL_API } from 'constants/config';
 export const fetchDetailCity = createAsyncThunk<ICity, any>(
     'cities/fetchDetailCity',
     async (id, { rejectWithValue }) => {
-        const url = `${SERVER_URL_API}/weather?q=${id}&appid=${API_KEY}&units=metric&lang=ru`;
+        console.log('id', id)
+        
+        const arrId = id.split(' ');
+        const idNew = arrId[arrId.length - 1];
+        console.log('idNew', idNew)
+
+        const url = `${SERVER_URL_API}/weather?q=${idNew}&appid=${API_KEY}&units=metric&lang=ru`;
 
         try {
             const res = await fetch(url);
@@ -17,7 +23,6 @@ export const fetchDetailCity = createAsyncThunk<ICity, any>(
             }
 
             const data = await res.json();
-
             return data;
         } catch (error: any) {
             return rejectWithValue(error.message);

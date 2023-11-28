@@ -5,9 +5,11 @@
   width: 100%;
   background-color: #292E44;
   border-radius: 6px;
-  opacity: 0.5;
   transition: all 0.5s;
   cursor: pointer;
+}
+.city-card:hover {
+  opacity: 0.5;
 }
 .city-card__content {
   display: flex;
@@ -33,7 +35,7 @@
 .city-card__image {
   position: relative;
   width: 100px;
-  height: 68px;
+  height: 78px;
 }
 .city-card__image img {
   position: absolute;

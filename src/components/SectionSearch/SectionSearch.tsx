@@ -9,6 +9,7 @@ import { useDebounce } from 'hook/useDebounce';
 import { useAppDispatch } from 'redux/store';
 import { selectCitiesData } from 'redux/cities/selectors';
 import { fetchCities } from 'redux/cities/asyncActions';
+import { resetItems } from 'redux/cities/slice';
 
 import './SectionSearch.css';
 
@@ -37,10 +38,22 @@ export default function SectionSearch() {
     }, 500);
 
     useEffect(() => {
-        if (inputValue !== '') {
+        if (inputValue.length >= 3) {
             getCities();
         }
+    }, [inputValue, inputValue.length]);
+
+    useEffect(() => {
+        return () => {
+            dispatch(resetItems());
+        };
     }, [inputValue]);
+
+    useEffect(() => {
+        return () => {
+            dispatch(resetItems());
+        };
+    }, []);
 
     return (
         <section className="section-search">
@@ -63,10 +76,13 @@ export default function SectionSearch() {
                             />
                         ) : null}
                     </form>
-                    {items?.length === 0 && inputValue !== '' && status === "completed" && (
-                        <p className="search-preview__item-name">Ничего не найдено</p>
-                    )}
-                    {status === 'error' && <p className="error-text">Что-то пошло не так</p>}
+                    <div className="search-preview__item-error">
+                        {items?.length === 0 && inputValue.length >= 3 && status === 'completed' ? (
+                            <p className="search-preview__item-name">Ничего не найдено</p>
+                        ) : null}
+                    </div>
+
+                    {/* {inputValue.length >= 3 && status === 'error' && <p className="error-text">Что-то пошло не так</p>} */}
                 </div>
             </div>
         </section>

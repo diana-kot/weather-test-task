@@ -12,6 +12,7 @@ export interface MainLayoutInt {
     children: JSX.Element;
     enableFooter?: boolean;
     gradient?: boolean;
+    enableHeader?: boolean
 }
 
 

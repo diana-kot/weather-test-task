@@ -11,15 +11,13 @@ import './CityCard.css';
 export default function CityCard({ item }: any) {
     const dispatch = useAppDispatch();
     const { id } = useParams();
-
+    
     const getDetailCities = () => {
         dispatch(fetchDetailCity(id));
     };
 
     useEffect(() => {
-        if (id) {
-            getDetailCities();
-        }
+        getDetailCities();
     }, []);
 
     return (

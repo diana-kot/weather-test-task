@@ -1,21 +1,19 @@
-import { useLocation } from 'react-router';
+import MainLayout from '../../layouts/MainLayout/MainLayout';
+import ErrorInfo from '../../components/ErrorInfo/ErrorInfo';
 
 import './NotFoundPage.css';
 
 function NotFoundPage() {
-    let location = useLocation();
     return (
-        <>
+        <MainLayout>
             <section className="section-error">
                 <div className="container center section-error__container">
                     <div className="section-error__content">
-                        <p className="section-error__text">
-                            404 <u>{location.pathname}</u>
-                        </p>
+                        <ErrorInfo />
                     </div>
                 </div>
             </section>
-        </>
+        </MainLayout>
     );
 }
 
